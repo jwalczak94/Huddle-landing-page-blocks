@@ -1,0 +1,69 @@
+//color variables
+$color-primary: hsl(322, 100%, 66%);
+$color-cyan-light: hsl(193, 100%, 96%);
+$color-cyan-dark: hsl(192, 100%, 9%);
+$color-grey: hsl(208, 11%, 55%);
+
+// RESPONSIVE BREAKPOINTS
+$bp-desktop: 75em; //1024px
+$bp-medium: 56.25rem; //900px
+$bp-mobile: 37.5em; //600px
+
+// Fonts variables
+$font-primary: 'Poppins';
+$font-secondary: 'Open Sans';
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-secondary, sans-serif;
+    font-weight: 400;
+    color: $color-cyan-dark;
+    width: 100%;
+}
+
+@mixin flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    @include flex-center-column;
+
+    gap: 4rem;
+    margin-bottom: 20rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-primary, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
