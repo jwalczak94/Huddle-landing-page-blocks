@@ -1,0 +1,216 @@
+@media screen and (min-width:$bp-mobile) {
+
+    // MAIN CONTENT
+    .card {
+        padding: 6rem;
+
+        &__text {
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media(min-width: $bp-medium) {
+
+    // UTILITIES
+    .btn {
+        &-lead {
+            padding: 2rem 7rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    .heading {
+        &-1 {
+            font-size: 3rem;
+        }
+
+        &-2 {
+            font-size: 2.7rem;
+        }
+
+        &-3 {
+            font-size: 2.7rem;
+        }
+    }
+
+    .copy {
+        text-align: right;
+    }
+
+    // HEADER
+    .header {
+        gap: 7rem;
+        padding: 4rem 5rem;
+        margin-bottom: 15rem;
+
+        &__hero {
+            width: 100%;
+            flex-direction: row;
+            text-align: left;
+            gap: 6rem;
+
+            &__description {
+                flex: 42%;
+            }
+
+            &__img {
+                flex: 58%;
+            }
+        }
+    }
+
+    .nav-bar {
+        width: 100%;
+
+        &__logo {
+            max-width: 20rem;
+        }
+    }
+
+    // MAIN CONTENT
+    .card {
+        flex-direction: row;
+        gap: 10rem;
+
+        padding: 3rem 10rem 4rem 3rem;
+        text-align: left;
+
+        &:nth-of-type(odd) {
+            flex-direction: row-reverse;
+            padding: 3rem 3rem 4rem 10rem;
+        }
+
+        &__text {
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+
+    // FOOTER
+    .footer {
+        padding: 15rem 8rem 6rem 8rem;
+
+        &__content {
+            grid-template-columns: 4fr 4fr 1fr;
+            gap: 6rem;
+        }
+    }
+
+    .get_started {
+        top: -18%;
+        gap: 2.5rem;
+        max-width: 70rem;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 2rem;
+
+        margin-top: 6.4rem;
+        height: 12rem;
+    }
+
+    .socials {
+        margin-top: 6.4rem;
+    }
+}
+
+@media(min-width: $bp-desktop) {
+
+    // UTILITIES
+    .btn {
+        &-light {
+            padding: 1.5rem 6rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    .heading {
+        &-1 {
+            font-size: 4rem;
+        }
+
+        &-2 {
+            font-size: 3rem;
+        }
+
+        &-3 {
+            font-size: 3.4rem;
+        }
+    }
+
+    .paragraph {
+        font-size: 1.8rem;
+    }
+
+    // HEADER
+    .header {
+        padding: 4rem 7rem;
+    }
+
+    .header {
+        &__hero {
+            max-width: 130rem;
+        }
+    }
+
+    .nav-bar {
+        max-width: 130rem;
+    }
+
+    // MAIN CONTENT
+    .container {
+        gap: 6rem;
+    }
+
+    .card {
+        padding: 3rem 12rem 5rem 3rem;
+        max-width: 124rem;
+        width: 95%;
+        gap: 20rem;
+
+        &:nth-of-type(odd) {
+            padding: 3rem 3rem 5rem 12rem;
+        }
+
+        &__text {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    // FOOTER
+    .footer {
+        padding: 15rem 12rem 6rem 12rem;
+
+        &__content {
+            gap: 10rem;
+        }
+    }
+
+    .get_started {
+        top: -22%;
+        padding: 4.8rem;
+        max-width: 80rem;
+    }
+
+    .links {
+        height: 15rem;
+
+        a {
+            font-size: 1.8rem;
+        }
+    }
+}

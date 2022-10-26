@@ -1,0 +1,31 @@
+.header {
+    @include flex-center-column;
+    justify-content: space-between;
+    gap: 5rem;
+
+    background-color: $color-cyan-light;
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin-bottom: 10rem;
+    padding: 2rem 1rem 6rem 1rem;
+
+    &__hero {
+        @include flex-center-column;
+        gap: 4rem;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        max-width: 10rem;
+    }
+}
