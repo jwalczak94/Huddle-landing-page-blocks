@@ -33,7 +33,13 @@ body {
     font-weight: 400;
     color: $color-cyan-dark;
     width: 100%;
+    line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
+
+html, body {
+    height: 100%;
+  }
 
 @mixin flex-center-column {
     display: flex;
